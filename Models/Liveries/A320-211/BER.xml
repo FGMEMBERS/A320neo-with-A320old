@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PropertyList>
+	<sim>
+		<model>
+			<livery>
+				<name>Air Berlin</name>
+				<neo-texture>Liveries/A320-BER.png</neo-texture>
+			</livery>
+		</model>
+	</sim>
+</PropertyList>

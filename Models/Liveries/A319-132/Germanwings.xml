@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PropertyList>
+	<sim>
+		<model>
+			<livery>
+				<name>Germanwings</name>
+				<neo-texture>Liveries/A319-GWI.png</neo-texture>
+			</livery>
+		</model>
+	</sim>
+</PropertyList>

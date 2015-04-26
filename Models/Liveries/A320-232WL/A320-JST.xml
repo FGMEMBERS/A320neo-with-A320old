@@ -1,0 +1,10 @@
+<PropertyList>
+  <sim>
+    <model>
+      <livery>
+        <name type="string">Jetstar Airways</name>
+        <texture>Liveries/A320-232WL/A320-JST.png</texture>
+      </livery>         
+    </model>
+  </sim>
+</PropertyList>

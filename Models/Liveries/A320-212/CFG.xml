@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PropertyList>
+	<sim>
+		<model>
+			<livery>
+				<name>Condor Flugdienst D-AICE</name>
+				<neo-texture>Liveries/A320-212/A320-CFG.png</neo-texture>
+			</livery>
+		</model>
+	</sim>
+</PropertyList>

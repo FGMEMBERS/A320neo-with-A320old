@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+
+<!--ENGINES-->
+
+<PropertyList>
+
+ <path>cfm.ac</path>
+
+ <!--offsets>
+   <x-m>1.72</x-m>
+   <z-m>3.9</z-m>
+ </offsets-->
+
+   <nasal>
+      <load>
+        # livery code
+        var livery_update = aircraft.livery_update.new("Aircraft/A320E/Models/CFM-Liveries");
+      </load>
+      <unload>
+        # more livery code
+        livery_update.stop();
+      </unload>
+   </nasal>						
+
+	<animation>
+		<type>material</type>
+		<object-name>Engine1</object-name>
+		<object-name>Engine1Rev1</object-name>
+		<object-name>Engine1Rev2</object-name>
+		<object-name>Engine1Rev3</object-name>
+		<object-name>Engine1Rev4</object-name>
+		<object-name>Nacelle1</object-name>
+		<object-name>Engine2</object-name>
+		<object-name>Engine2Rev1</object-name>
+		<object-name>Engine2Rev2</object-name>
+		<object-name>Engine2Rev3</object-name>
+		<object-name>Engine2Rev4</object-name>
+		<object-name>Nacelle2</object-name>
+		<object-name>FanDiskRight.3</object-name>
+		<object-name>FanDiskLeft.3</object-name>
+		<property-base>sim/model/livery</property-base>
+		<texture-prop>texture</texture-prop>
+		<texture>A320-NWA.png</texture>
+	</animation>
+	
+	<animation>
+		<type>material</type>
+		<object-name>FanDiskRight.1</object-name>
+		<object-name>FanDiskRight.2</object-name>
+		<object-name>FanDiskLeft.1</object-name>
+		<object-name>FanDiskLeft.2</object-name>
+		<property-base>sim/model/livery</property-base>
+		<texture-prop>texture2</texture-prop>
+		<texture>FanDisk.png</texture>
+	</animation>	
+
+ <!-- Exterior -->
+
+ <!-- Engines -->
+ <animation>
+  <type>spin</type>
+  <object-name>FanDiskLeft.1</object-name>
+  <object-name>FanDiskLeft.2</object-name>
+  <object-name>FanDiskLeft.3</object-name>
+  <factor>-67</factor>
+  <property>engines/engine[0]/n1</property>
+  <center>
+   <x-m>-6.72506</x-m>
+   <y-m>-5.7555</y-m>
+   <z-m>-4.25428</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>spin</type>
+  <object-name>FanDiskRight.1</object-name>
+  <object-name>FanDiskRight.2</object-name>
+  <object-name>FanDiskRight.3</object-name>
+  <factor>-67</factor>
+  <property>engines/engine[1]/n1</property>
+  <center>
+   <x-m>-6.62278</x-m>
+   <y-m>5.80868</y-m>
+   <z-m>-4.27002</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+
+
+<!-- Thrust reversers -->
+
+	<!-- Engine No. 1 -->
+
+	<animation>
+		<type>rotate</type>
+		<object-name>Engine1Rev1</object-name>
+		<property>/engines/engine[1]/reverser-pos-norm</property>
+		<factor>45</factor>
+		<center>
+			<x-m>-4.5</x-m>
+			<y-m>-5.4</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>Engine1Rev2</object-name>
+		<property>/engines/engine[1]/reverser-pos-norm</property>
+		<factor>-45</factor>
+		<center>
+			<x-m>-4.5</x-m>
+			<y-m>-6.22</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>Engine1Rev3</object-name>
+		<property>/engines/engine[1]/reverser-pos-norm</property>
+		<factor>-45</factor>
+		<center>
+			<x-m>-4.5</x-m>
+			<y-m>-6.22</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>Engine1Rev4</object-name>
+		<property>/engines/engine[1]/reverser-pos-norm</property>
+		<factor>45</factor>
+		<center>
+			<x-m>-4.5</x-m>
+			<y-m>-5.4</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+
+	<!-- Engine No. 2 -->
+
+	<animation>
+		<type>rotate</type>
+		<object-name>Engine2Rev1</object-name>
+		<property>/engines/engine[0]/reverser-pos-norm</property>
+		<factor>45</factor>
+		<center>
+			<x-m>-4.5</x-m>
+			<y-m>5.4</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>Engine2Rev2</object-name>
+		<property>/engines/engine[0]/reverser-pos-norm</property>
+		<factor>-45</factor>
+		<center>
+			<x-m>-4.5</x-m>
+			<y-m>6.22</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>Engine2Rev3</object-name>
+		<property>/engines/engine[0]/reverser-pos-norm</property>
+		<factor>-45</factor>
+		<center>
+			<x-m>-4.5</x-m>
+			<y-m>6.22</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>Engine2Rev4</object-name>
+		<property>/engines/engine[0]/reverser-pos-norm</property>
+		<factor>45</factor>
+		<center>
+			<x-m>-4.5</x-m>
+			<y-m>5.4</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+
+</PropertyList>
